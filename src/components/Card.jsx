@@ -2,7 +2,6 @@ import React from "react";
 import "./Card.css";
 
 function getColor(props) {
-    console.log("props", props.red)
   if (props.red) {
     return "Red";
   }
