@@ -10,16 +10,20 @@ export default ({ min, max, onMinChanged, onMaxChanged }) => {
           <strong>Mínimo:</strong>
           <input
             type="number"
-            value={min}
-            onChange={(e) => onMinChanged(+e.target.value)} // passa o valor para o setMin
+            value={0}
+            readOnly
+            // value={min}
+            // onChange={(e) => onMinChanged(+e.target.value)} // passa o valor para o setMin
           />
         </span>
         <span>
           <strong>Máximo:</strong>
           <input
             type="number"
-            value={max}
-            onChange={(e) => onMaxChanged(+e.target.value)} // passa o valor para o setMax
+            value={10}
+            readOnly
+            // value={max}
+            // onChange={(e) => onMaxChanged(+e.target.value)} // passa o valor para o setMax
           />
         </span>
       </div>
